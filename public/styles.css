@@ -40,6 +40,12 @@ body {
     min-width: 320px;
     max-width: 1600px;
 }
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 main {
     margin-top: 5rem;
 }
@@ -58,8 +64,14 @@ header
 
 */
 header {
-    padding: 1rem;
+    padding: 0.3 rem;
     text-align: center;
+    background-color: rgb(241, 241, 241);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 .logo {
     font-size: 1.5rem;
@@ -148,7 +160,7 @@ footer
 */
 
 .footer {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(185, 185, 185);
     padding: 1rem;
 }
 
@@ -268,12 +280,6 @@ home- section one -----HERO
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin-bottom: 1rem;
-}
-
-#home-hero h1 {
-    font-size: 4rem;
-    font-weight: bold;
     margin-bottom: 1rem;
 }
 
@@ -643,7 +649,7 @@ end of home section five -----CONTACT
 
 /* 
 
-    Demos Page
+   DEMOS PAGE
 
 */
 
@@ -720,25 +726,26 @@ Interest page - section one ----- HERO
 
 .interest-hero {
     display: flex;
+    max-width: 1600px;
     align-items: center;
-    text-align: center;
+
     padding: 2rem;
-    max-width: 1200px;
     margin: 0 auto;
+
+    border-radius: 20px;
 }
 
 .interest-hero__content {
     flex-grow: 1;
+    margin: auto;
 }
-
 .interest-hero__title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .interest-hero__text {
-    font-size: 1.2rem;
-    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -747,46 +754,96 @@ Interest page - section one ----- HERO
         justify-content: space-between;
         align-items: center;
     }
-
-    .interest-hero__image {
-        width: 40%;
-        margin: 4rem 0 4rem 4rem;
-    }
-
     .interest-hero__content {
         width: 50%;
-        margin: 4rem;
+        margin: 4rem auto;
+    }
+    .interest-hero__text {
+        text-align: center;
     }
 }
 
+/* 
+    
+        Interest page - section two ----- FACTS
+    
+*/
+.interest-facts {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.interest-facts__title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.interest-facts__list {
+    list-style-type: decimal;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.interest-facts__list li {
+    font-size: 1.2rem;
+    color: #303030;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.interest-facts__list :nth-child(2n + 1) {
+    background-color: rgb(41, 41, 41);
+    padding: 0.4rem;
+    border-radius: 5px;
+    color: #fff;
+}
+.interest-facts__list :nth-child(2n + 1) li::before {
+    color: #000000;
+    margin-right: 0.5rem;
+}
+
+/* 
+    end of interest page - section two ----- FACTS
+
+*/
+
 /*
 
-    Interest page - section two ----- JAPAN
+    Interest page - section three ----- JAPAN
 
 */
 
 .interest-japan {
+    margin: 4rem auto;
+    max-width: 1600px;
+    padding: 2rem;
+
+    border-radius: 5px;
+}
+
+.interest-japan__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.interest-japan__content {
-    flex-grow: 1;
-}
-.interest-japan__title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    text-decoration: wavy;
 }
 
-.interest-japan__text {
-    font-size: 1.2rem;
+.interest-japan__title {
+    font-size: 1.8rem;
     color: #333;
+    margin-bottom: 1.5rem;
 }
+
+.interest-japan p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    max-width: 80%;
+    text-align: left;
+}
+
 .interest-japan__images {
     display: grid;
 
@@ -854,3 +911,121 @@ Interest page - section one ----- HERO
     Interest page - section three ----- GAMES
 
 */
+
+/* 
+
+qualifications page 
+
+
+*/
+
+.qualifications-main {
+    margin-top: 7rem;
+}
+
+/*
+
+        Qualifications page - section one ----- HERO
+    
+    */
+
+.qualifications-hero {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.qualifications-hero__header {
+    margin-bottom: 1rem;
+}
+
+.qualifications-hero__title {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.qualifications-hero__picture {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
+}
+
+.qualifications-hero__subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.qualification-table {
+    margin-bottom: 2rem;
+}
+
+.qualification-table__heading {
+    font-size: 1.6rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.qualification-table__table {
+    width: 100%;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.qualification-table__table th,
+.qualification-table__table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.qualification-table__table th {
+    font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+.qualification-skills {
+    margin-bottom: 2rem;
+}
+.qualification-skills div {
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.qualification-skills h2 h3 {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.qualification-skills__list {
+    list-style-type: disc;
+    padding-left: 1rem;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qualifications-footer {
+    background-color: #f0f0f0;
+    box-shadow: #555 0 2px 8px;
+    padding: 1rem;
+    text-align: center;
+}
+.qualifications-footer p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.qualifications-footer em {
+    font-size: 1.2rem;
+    color: #00ff55;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}

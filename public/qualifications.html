@@ -4,115 +4,127 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Sorin Mihalache - Web Developer" />
+        <link rel="stylesheet" href="styles.css" />
         <title>Qualifications</title>
     </head>
 
     <body>
         <header>
             <nav>
-                <ul>
+                <div class="logo">
+                    <a href="/public/index.html">Sorin Mihalache</a>
+                </div>
+
+                <ul class="navbar">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="qualifications.html">Qualifications</a></li>
-                    <li><a href="interest.html">Interests</a></li>
                     <li><a href="demos.html">Demos</a></li>
+                    <li><a href="interest.html">Interest</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main>
-            <div>
-                <h1>Qualifications</h1>
-            </div>
-            <picture>
-                <source
-                    type="image/webp"
-                    srcset="images/star-1200.webp"
-                    media="(min-width: 70rem)"
-                />
-                <source
-                    type="image/webp"
-                    srcset="images/star-600.webp"
-                    media="(min-width: 60rem)"
-                />
-                <source
-                    type="image/webp"
-                    srcset="images/star-300.webp"
-                    media="(min-width: 25rem)"
-                />
-                <source
-                    type="image/webp"
-                    srcset="images/star-150.webp"
-                    media="(min-width: 0rem)"
-                />
-                <img
-                    src="images/300x60_star.jpg"
-                    alt=" five stars in a row with the 4th  white "
-                    width="300"
-                    height="60"
-                />
-            </picture>
+        <main class="qualifications-main">
+            <section class="qualifications-hero">
+                <div class="qualifications-hero__header">
+                    <h1 class="qualifications-hero__title">Qualifications</h1>
+                </div>
+                <picture class="qualifications-hero__picture">
+                    <source
+                        type="image/webp"
+                        srcset="images/star-1200.webp"
+                        media="(min-width: 70rem)"
+                    />
+                    <source
+                        type="image/webp"
+                        srcset="images/star-600.webp"
+                        media="(min-width: 60rem)"
+                    />
+                    <source
+                        type="image/webp"
+                        srcset="images/star-300.webp"
+                        media="(min-width: 25rem)"
+                    />
+                    <source
+                        type="image/webp"
+                        srcset="images/star-150.webp"
+                        media="(min-width: 0rem)"
+                    />
+                    <img
+                        src="images/300x60_star.jpg"
+                        alt=" five stars in a row with the 4th  white "
+                        width="300"
+                        height="60"
+                    />
+                </picture>
+                <h2 class="qualifications-hero__subtitle">
+                    My name is Sorin Mihalache. I was given this page and have
+                    corrected all the issues with the HTML and the image on this
+                    page as part of my assessment.
+                </h2>
+            </section>
 
-            <p>
-                My name is Sorin Mihalache. I was given this page and have
-                corrected all the issues with the HTML and the image on this
-                page as part of my assessment.
-            </p>
+            <section class="qualification-table">
+                <h3 class="qualification-table__heading">
+                    This table contains qualifications I have studied, and ones
+                    I am currently studying
+                </h3>
+                <table class="qualification-table__table">
+                    <tr>
+                        <th>Level</th>
+                        <td>Subject</td>
+                        <td>Completion date</td>
+                        <td>Result</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Web Technology and Programming</td>
+                        <td>29/05/2022</td>
+                        <td>83.5</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Study Skills and Professional Development</td>
+                        <td>29/05/2022</td>
+                        <td>78</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Networking, Statistics and Probability</td>
+                        <td>29/05/2022</td>
+                        <td>87.5</td>
+                    </tr>
+                </table>
+            </section>
 
-            <p>
-                This table contains qualifications I have studied, and ones I am
-                currently studying
-            </p>
-            <table>
-                <tr>
-                    <th>Level</th>
-                    <td>Subject</td>
-                    <td>Completion date</td>
-                    <td>Result</td>
-                </tr>
-                <tr>
-                    <td>xx</td>
-                    <td>xx</td>
-                    <td>xx</td>
-                    <td>xx</td>
-                </tr>
-                <tr>
-                    <td>xx</td>
-                    <td>xx</td>
-                    <td>xx</td>
-                    <td>xx</td>
-                </tr>
-                <tr>
-                    <td>xx</td>
-                    <td>xx</td>
-                    <td>xx</td>
-                    <td>xx</td>
-                </tr>
-            </table>
-
-            <p>
-                I will have covered all of these subjects by the end of my first
-                year at <strong>university</strong>
-            </p>
-            <ul>
-                <li>Programming languages</li>
-                <li>
-                    <ul>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>C#</li>
-                    </ul>
-                </li>
-                <li>Networking</li>
-                <li>Cybersecurity</li>
-                <li>Digital technologies</li>
-                <li>Web pages</li>
-                <li>Operating systems</li>
-            </ul>
+            <section class="qualification-skills">
+                <div>
+                    <h2 class="qualification-skills">
+                       I will have covered all of these subjects by the end of my first year at <strong>university</p></strong>
+                    </h2>
+                    <h3>Programming languages</h3>
+                </di>
+                <ul class="qualification-skills__list">
+                    <li>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C#</li>
+                        </ul>
+                    </li>
+                    <li>Networking</li>
+                    <li>Cybersecurity</li>
+                    <li>Digital technologies</li>
+                    <li>Web pages</li>
+                    <li>Operating systems</li>
+                </ul>
+            </section>
         </main>
-        <footer>
+        <footer class="qualifications-footer">
             <p>
-                My name is Sorin Mihalache and I am studying a degree in xx at
-                Staffordshire University
+                My name is Sorin Mihalache and I am studying a degree in
+                <em>Computer Science</em> at Staffordshire University
             </p>
         </footer>
     </body>

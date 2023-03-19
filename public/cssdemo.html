@@ -53,15 +53,46 @@
                     </p>
                 </article>
                 <article class="cssdemo-article-two">
-                    <h2 class="cssdemo-article-two__title">HTML and CSS</h2>
-                    <p class="cssdemo-article-two__text">
-                        <a
-                            class="cssdemo-container__a"
-                            href="https://www.w3.org/standards/webdesign/htmlcss"
-                            >W3C definition of HTML and CSS</a
-                        >
-                        is:
-                    </p>
+                    <div class="cssdemo-article-two__container">
+                        <!-- image source from https://www.pngegg.com/en/png-pzjdu -->
+                        <picture class="cssdemo-article-two__picture">
+                            <source
+                                type="image/webp"
+                                media="(min-width: 0rem)"
+                                srcset="images/cssdemo_img/300xhtml.webp"
+                            />
+                            <source
+                                type="image/webp"
+                                media="(min-width: 30rem)"
+                                srcset="images/cssdemo_img/600xhtml.webp"
+                            />
+                            <source
+                                type="image/webp"
+                                media="(min-width: 60rem)"
+                                srcset="images/cssdemo_img/900xhtml.webp"
+                            />
+
+                            <img
+                                src="images/cssdemo_img/html-css.png"
+                                alt="HTML and CSS logo"
+                            />
+                        </picture>
+                        <div>
+                            <h2 class="cssdemo-article-two__title">
+                                HTML and CSS
+                            </h2>
+
+                            <p class="cssdemo-article-two__text">
+                                <a
+                                    class="cssdemo-container__a"
+                                    href="https://www.w3.org/standards/webdesign/htmlcss"
+                                    >W3C definition of HTML and CSS</a
+                                >
+                                is:
+                            </p>
+                        </div>
+                    </div>
+
                     <blockquote
                         class="cssdemo-article-two__quote"
                         cite="https://www.w3.org/standards/webdesign/htmlcss"
