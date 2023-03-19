@@ -23,70 +23,85 @@
     <nav>
 
 
-      <!-- logo  -->
       <div class="logo">
         <a href="/public/index.html">Sorin Mihalache</a>
       </div>
 
 
-      <!-- Navigation links -->
       <ul class="navbar">
-        <li><a href="/public/index.html">Home</a></li>
-        <li><a href="/public/qualifications.html">Qualifications</a></li>
-        <li><a href="/public/demos.html">Demos</a></li>
-        <li><a href="/public/interest.html">Interest</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="demos.html">Demos</a></li>
+        <li><a href="interest.html">Interest</a></li>
       </ul>
 
     </nav>
   </header>
   <main>
-    <!-- section one - hero -->
-    <section id="hero">
-      <img src="" alt="">
+    <!-- 
+      
+      
+      section one - hero 
+    
+    
+    -->
+    <section id="home-hero">
+      <img src="images/avatar/avatar_phone.png" alt="Author avatar made with AI"
+        srcset="images/avatar/avatar_phone.png 1x, images/avatar/avatar_small.png 2x, images/avatar/avatar_medium.png 3x"
+        sizes="(min-width: 768px) 400px, 100vw">
       <h1>Welcome to my online portfolio!</h1>
-      <p class="about-me__text section__text">I'm Sorin, a web developer skilled in both front-end and back-end
+      <p class="">I'm Sorin, a web developer skilled in both front-end and back-end
         technologies. I write clean, efficient code to create
         exceptional digital experiences for all users.</p>
-      <a href="/public/demos.html">Explore My Work</a>
+      <a href="demos.html">Explore My Work</a>
     </section>
-    <!-- section two - services  -->
-    <section class="services">
-      <h2 class="services__heading">Services</h2>
+    <!-- 
+      
+      
+      
+      section two - services  
+    
+    
+    -->
+    <section class="home-services">
+      <h2 class="home-services__heading">Services</h2>
 
-      <div class="services__grid">
-        <article class="services__item">
-          <h3 class="services__subheading">Website Design and Development</h3>
-          <p class="services__description">I design and develop custom websites tailored to your business needs and
+      <div class="home-services__grid">
+        <article class="home-services__item">
+          <h3 class="home-services__subheading">Website Design and Development</h3>
+          <p class="home-services__description">I design and develop custom websites tailored to your business needs and
             preferences. I also create user-friendly interfaces and responsive designs that work across different
             devices.
           </p>
         </article>
 
-        <article class="services__item">
-          <h3 class="services__subheading">E-commerce Website Development</h3>
-          <p class="services__description">I build online stores with secure payment gateways, shopping carts, and
+        <article class="home-services__item">
+          <h3 class="home-services__subheading">E-commerce Website Development</h3>
+          <p class="home-services__description">I build online stores with secure payment gateways, shopping carts, and
             product
             pages and implement user account systems, order tracking, and inventory management tools.</p>
         </article>
 
-        <article class="services__item">
-          <h3 class="services__subheading">Website Maintenance and Support</h3>
-          <p class="services__description">I provide ongoing maintenance and support services for your business's
+        <article class="home-services__item">
+          <h3 class="home-services__subheading">Website Maintenance and Support</h3>
+          <p class="home-services__description">I provide ongoing maintenance and support services for your business's
             website
             and
-            monitor the website’s performance, security, and uptime.</p>
+            monitor the website&apos;s performance, security, and uptime.</p>
         </article>
 
-        <article class="services__item">
-          <h3 class="services__subheading">Custom Web Applications</h3>
-          <p class="services__description">I develop custom web applications to meet specific business needs by
+        <article class="home-services__item">
+          <h3 class="home-services__subheading">Custom Web Applications</h3>
+          <p class="home-services__description">I develop custom web applications to meet specific business needs by
             integrating
             third-party APIs and services to streamline workflows and improve efficiency.</p>
         </article>
 
-        <article class="services__item">
-          <h3 class="services__subheading">Content Management Systems (CMS)</h3>
-          <p class="services__description">I build websites using popular CMS platforms like WordPress and customise CMS
+        <article class="home-services__item">
+          <h3 class="home-services__subheading">Content Management Systems (CMS)</h3>
+          <p class="home-services__description">I build websites using popular CMS platforms like WordPress and
+            customise
+            CMS
             themes and plugins.</p>
           <p>
             In addition to building CMS-based websites, I provide training and support to help my clients manage their
@@ -100,90 +115,122 @@
 
     </section>
 
-    <!-- secrion three - skills -->
+    <!-- 
+      
+      
+      section three - skills 
+    
+    
+    -->
 
-    <section class="skills">
-      <h2 class="skills__heading">My Skills & Expertise</h2>
-      <p class="skills__description">I have extensive experience working with the following technologies:</p>
-      <ul class="skills__list">
-        <li class="skills__item">Programming languages: Java, Python, C++</li>
-        <li class="skills__item">Front-End Development: HTML, CSS, JavaScript, React</li>
-        <li class="skills__item">Back-End Development: PHP, Node.js, Express, Laravel</li>
-        <li class="skills__item">Database Management: MySQL, MongoDB, PostgreSQL</li>
-        <li class="skills__item">Version Control: Git, GitHub</li>
-        <li class="skills__item">Task Runners & Build Tools: Webpack, Gulp</li>
-        <li class="skills__item">Testing & Debugging: Chrome DevTools</li>
+    <section class="home-skills">
+      <h2 class="home-skills__heading">My Skills & Expertise</h2>
+      <p class="home-skills__description">I have extensive experience working with the following technologies:</p>
+      <ul class="home-skills__list">
+        <li class="home-skills__item"><span>Web Design:</span> <br />Adobe Photoshop, Adobe Illustrator, Figma</li>
+        <li class="home-skills__item"><span>Back-End Development:</span><br /> Node.js, Express, PHP, Laravel</li>
+        <li class="home-skills__item"><span>Front-End Development:</span><br /> HTML, CSS, JavaScript, React</li>
+        <li class="home-skills__item"><span>Database Management:</span><br /> MySQL, MongoDB, PostgreSQL</li>
+        <li class="home-skills__item"><span>Version Control:</span><br /> Git, GitHub</li>
+        <li class="home-skills__item"><span>Build Tools:</span> <br /> Webpack, Gulp</li>
+        <li class="home-skills__item"><span>Testing & Debugging:</span><br /> Chrome DevTools</li>
       </ul>
-      <a href="#section-4" class="skills__link">View My Skills & Expertise</a>
+      <div><a href="demos.html" class="home-skills__link">View My Skills & Expertise</a></di>
     </section>
 
 
-    <!-- section four - customers -->
+    <!-- 
+      
+      
+      section four - customers
+    
+    
+    -->
 
-    <section class="customer-awards section">
-      <h2 class="customer-awards__title section__title">Customers I've Worked With:</h2>
-      <div class="customer-awards__logos">
-        <img src="/public/images/bcs_logo_phone.png" alt="Company 1 Logo" class="customer-awards__logo"
-          srcset="/public/images/bcs_logo_phone.png 1x, /public/images/bcs_logo_small.png 2x, /public/images/bcs_logo_medium.png 3x"
-          sizes="(min-width: 768px) 400px, 100vw">
-        <img src="/public/images/ego_logo_phone.png" alt="Company 2 Logo" class="customer-awards__logo"
-          srcset="/public/images/ego_logo_phone.png 1x, /public/images/ego_logo_small.png 2x, /public/images/ego_logo_medium.png 3x"
-          sizes="(min-width: 768px) 400px, 100vw">
-        <img src="/public/images/fleet_logo_phone.png" alt="Company 3 Logo" class="customer-awards__logo"
-          srcset="/public/images/fleet_logo_phone.png 1x, /public/images/fleet_logo_small.png 2x, /public/images/fleet_logo_medium.png 3x"
+    <section class="customer ">
+      <h2 class="customer__title section__title">Customers I've Worked With:</h2>
+      <div class="customers__logos">
+        <img alt="Company 1 Logo" class="customer__logo"
+          srcset="images/bcs_logo_phone.png 1x, images/bcs_logo_small.png 2x, images/bcs_logo_medium.png 3x"
+          sizes="(min-width: 768px) 200px, 100vw">
+        <img alt="Company 2 Logo" class="customer__logo"
+          srcset="images/ego_logo_phone.png 1x, images/ego_logo_small.png 2x, images/ego_logo_medium.png 3x"
+          sizes="(min-width: 768px) 200px, 100vw">
+        <img alt="Company 3 Logo" class="customer__logo"
+          srcset="images/fleet_logo_phone.png 1x, images/fleet_logo_small.png 2x, images/fleet_logo_medium.png 3x"
           sizes="(min-width: 768px) 200px, 100vw " />
       </div>
     </section>
 
-    <section class="social">
-      <div class="">
-        <h2 class="social__title ">Get In Touch</h2>
-        <p class="social__text">Ready to collaborate or simply want to connect? Don't hesitate to reach
+    <!-- 
+      
+      
+      section five - contact
+
+
+    -->
+
+
+    <section class="contact">
+      <div class="contact__text">
+        <h2 class="contact__title ">Get In Touch</h2>
+        <p class="contact__paragraph">Ready to collaborate or simply want to connect? Don't hesitate to reach
           out! I
           am always eager to meet new people and explore exciting opportunities.
         </p>
       </div>
-      <div class="social__content ">
+      <div class="contact__content ">
 
-        <form class="social__form">
-          <div class="social__form-group">
-            <label for="name" class="social__form-label">Name:</label>
-            <input type="text" id="name" name="name" class="social__form-input" required>
+        <form class="contact__form">
+          <div class="contact__form-group">
+            <label for="name" class="contact__form-label">Name:</label>
+            <input type="text" id="name" name="name" class="contact__form-input" required>
           </div>
 
-          <div class="social__form-group">
-            <label for="email" class="social__form-label">Email:</label>
-            <input type="email" id="email" name="email" class="social__form-input" required>
+          <div class="contact__form-group">
+            <label for="email" class="contact__form-label">Email:</label>
+            <input type="email" id="email" name="email" class="contact__form-input" required>
           </div>
 
-          <div class="social__form-group">
-            <label for="message" class="social__form-label">Message:</label>
-            <textarea id="message" name="message" class="social__form-textarea" required></textarea>
+          <div class="contact__form-group">
+            <label for="message" class="contact__form-label">Message:</label>
+            <textarea id="message" name="message" class="contact__form-textarea" required></textarea>
           </div>
 
-          <button type="submit" class="social__form-button">Send</button>
+          <button type="submit" class="contact__form-button">Send</button>
         </form>
       </div>
-      <!-- <a href="https://iconscout.com/3ds/twitter" target="_blank">Twitter Logo Logo 3D Illustration</a> by <a href="https://iconscout.com/contributors/iconscout" target="_blank">IconScout Store</a> -->
-      <!--  <a href="https://iconscout.com/3ds/linkedin" target="_blank">Linkedin 3D Illustration</a> by <a href="https://iconscout.com/contributors/sergey-tikhonov" target="_blank">Free3Dicon</a> -->
-      <div class="social__icons">
-        <a href="#" target="_blank" class="social__icon-link">
-          <img src="/public/images/linkedin.png" alt="LinkedIn Icon" class="social__icon">
-        </a>
-        <a href="#" target="_blank" class="social__icon-link">
-          <img src="/public/images/github-icon.png" alt="GitHub Icon" class="social__icon">
-        </a>
-        <a href="#" target="_blank" class="social__icon-link">
-          <img src="/public/images/twitter-logo.png" alt="Twitter Icon" class="social__icon">
-        </a>
-      </div>
+
+
     </section>
 
 
   </main>
+
+  <!-- 
+      
+      
+      footer
+    
+    
+    -->
   <footer class="footer">
-    <p class="footer__text">&copy; 2023 Sorin Mihalache. All rights reserved.
-    </p>
+    <div class="footer__container">
+      <p class="footer__text">&copy; 2023 Sorin Mihalache | M030448l | This website was build for an assignment at
+        Staffordshire University
+      </p>
+      <div class="footer__icons">
+        <a href="#" target="_blank" class="footer__icon-link">
+          <img src="images/icons8-linkedin.svg" alt="LinkedIn Icon" class="footer__icon" width="48" height="48">
+        </a>
+        <a href="#" target="_blank" class="footer__icon-link">
+          <img src="images/icons8-github.svg" alt="GitHub Icon" class="footer__icon" width="48" height="48">
+        </a>
+        <a href="#" target="_blank" class="footer__icon-link">
+          <img src="images/icons8-twitter.svg" alt="Twitter Icon" class="footer__icon" width="48" height="48">
+        </a>
+      </div>
+    </div>
     <button id="dark-mode-button" class="footer__button">Dark Mode</button>
   </footer>
 

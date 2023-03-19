@@ -1,2 +1,333 @@
 /* This is the extra style for the CSS demo page only
 This should be linked to alongside the main styles.css page */
+
+/* general  */
+#cssdemo-page {
+    background-color: #effffe;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.5em;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+}
+main {
+    margin: 0 auto;
+    max-width: 66rem;
+    padding: 1rem;
+}
+
+.cssdemo-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cssdemo-container__a {
+    color: #420142;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.cssdemo-container__a:hover {
+    color: #420142;
+    text-decoration: underline;
+}
+
+/* 
+
+
+header 
+
+
+*/
+
+.cssdemo-header {
+    padding: 0.5em 0;
+    text-align: center;
+    background-image: linear-gradient(
+        45deg,
+        rgb(66, 178, 206) 0%,
+        rgba(223, 11, 110, 0.397) 100%
+    );
+    padding: 1rem 0;
+    color: #effffe;
+}
+
+.cssdemo-header__h1 {
+    font-size: 3em;
+    margin: 2rem 0;
+}
+.cssdemo-header__h2 {
+    font-size: 1.2em;
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .cssdemo-header__h1 {
+        font-size: 4.5em;
+        margin: 5rem 0 4rem;
+    }
+    .cssdemo-header__h2 {
+        font-size: 1.8em;
+        margin: 0 0 1rem 0;
+    }
+}
+
+/* 
+
+  end of header
+
+
+*/
+
+/*
+
+
+navigation
+
+
+*/
+
+.cssdemo-nav {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+.cssdemo-nav__ul li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.cssdemo-nav__ul li a {
+    border: 1px solid #000;
+    color: #ffffff;
+    display: block;
+    padding: 0.5em 0.3em;
+    text-decoration: none;
+    background-color: rgba(66, 178, 206, 0.13);
+    margin-right: 0.2em;
+    min-width: 3rem;
+}
+.cssdemo-nav__ul li a:hover {
+    color: white;
+    background-color: rgba(39, 1, 19, 0.3);
+    text-decoration: none;
+}
+@media screen and (min-width: 480px) {
+    .cssdemo-nav__ul li a {
+        padding: 0.5em 0.5em;
+        min-width: 6rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cssdemo-nav__ul li a {
+        padding: 0.5em 1.5rem;
+        min-width: 8rem;
+    }
+}
+
+/* 
+
+
+end of navigation 
+
+
+*/
+
+/* main content  */
+
+/* article one */
+
+.cssdemo-article-one {
+    margin: 0 auto;
+    max-width: 66rem;
+    padding: 1rem;
+}
+
+.cssdemo-article-one h2 {
+    line-height: normal;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cssdemo-article-one p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .cssdemo-article-one {
+        padding: 0.5rem;
+    }
+
+    .cssdemo-article-one__title {
+        font-size: 1.5rem;
+    }
+
+    .cssdemo-article-one__text {
+        font-size: 1rem;
+    }
+}
+
+/* end of article one */
+
+/* article two */
+
+.cssdemo-article-two {
+    margin: 0 auto;
+    max-width: 66rem;
+    padding: 1rem;
+}
+
+.cssdemo-article-two__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cssdemo-article-two__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.cssdemo-article-two__quote {
+    max-width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-left: 4px solid #b400cc;
+    background-color: #f2f2f2;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cssdemo-article-two {
+        padding: 0.5rem;
+    }
+
+    .cssdemo-article-two__title {
+        font-size: 1.5rem;
+    }
+
+    .cssdemo-article-two__text {
+        font-size: 1rem;
+    }
+    .cssdemo-article-two__quote {
+        max-width: 100%;
+    }
+}
+/* 
+    
+    end of article two
+*/
+
+/* article three */
+
+/* Base styles */
+.cssdemo-article-three {
+    margin: 0 auto;
+    max-width: 66rem;
+    padding: 1rem;
+}
+
+.cssdemo-article-three__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cssdemo-article-three__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.cssdemo-article-three__list {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.cssdemo-article-three__item {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cssdemo-article-three {
+        padding: 0.5rem;
+    }
+
+    .cssdemo-article-three__title {
+        font-size: 1.5rem;
+    }
+
+    .cssdemo-article-three__text {
+        font-size: 1rem;
+    }
+}
+
+/* end of article three */
+
+/* article four */
+/* Base styles */
+.cssdemo-article-four {
+    margin: 0 auto;
+    max-width: 66rem;
+    padding: 1rem;
+}
+
+.cssdemo-article-four__title {
+    line-height: normal;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cssdemo-article-four__text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.cssdemo-article-four__link:hover {
+    text-decoration: underline;
+}
+
+.cssdemo-article-four__list {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.cssdemo-article-four__item {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .cssdemo-article-four {
+        padding: 0.5rem;
+    }
+
+    .cssdemo-article-four__title {
+        font-size: 1.5rem;
+    }
+
+    .cssdemo-article-four__text {
+        font-size: 1rem;
+    }
+}
+
+/* end of article four */
+
+/* end of main content  */
+
+/* footer  */
+
+/* end of extra style for CSS demo page only */ ;

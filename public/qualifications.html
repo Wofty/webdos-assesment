@@ -1,89 +1,119 @@
 <!DOCTYPE html>
-<html lang="uken">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Qualifications</title>
+    </head>
 
-<body>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="qualifications.html">Qualifications</a></li>
+                    <li><a href="interest.html">Interests</a></li>
+                    <li><a href="demos.html">Demos</a></li>
+                </ul>
+            </nav>
+        </header>
 
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+        <main>
+            <div>
+                <h1>Qualifications</h1>
+            </div>
+            <picture>
+                <source
+                    type="image/webp"
+                    srcset="images/star-1200.webp"
+                    media="(min-width: 70rem)"
+                />
+                <source
+                    type="image/webp"
+                    srcset="images/star-600.webp"
+                    media="(min-width: 60rem)"
+                />
+                <source
+                    type="image/webp"
+                    srcset="images/star-300.webp"
+                    media="(min-width: 25rem)"
+                />
+                <source
+                    type="image/webp"
+                    srcset="images/star-150.webp"
+                    media="(min-width: 0rem)"
+                />
+                <img
+                    src="images/300x60_star.jpg"
+                    alt=" five stars in a row with the 4th  white "
+                    width="300"
+                    height="60"
+                />
+            </picture>
 
-  <body>
+            <p>
+                My name is Sorin Mihalache. I was given this page and have
+                corrected all the issues with the HTML and the image on this
+                page as part of my assessment.
+            </p>
 
-    <header>
-      <nav>
-        <!-- logo  -->
-        <div class="logo">
-          <a href="#section-1">Sorin Mihalache</a>
-        </div>
-        <button id="dark-mode-button">Dark</button>
-        <!-- Navigation links -->
-        <ul class="navbar">
-          <li><a href="/public/index.html">Home</a></li>
-          <li><a href="/public/qualifications.html">Qualifications</a></li>
-          <li><a href="/public/demos.html">Demos</a></li>
-          <li><a href="/public/interest.html">Interest</a></li>
-        </ul>
+            <p>
+                This table contains qualifications I have studied, and ones I am
+                currently studying
+            </p>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <td>Subject</td>
+                    <td>Completion date</td>
+                    <td>Result</td>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>xx</td>
+                    <td>xx</td>
+                    <td>xx</td>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>xx</td>
+                    <td>xx</td>
+                    <td>xx</td>
+                </tr>
+                <tr>
+                    <td>xx</td>
+                    <td>xx</td>
+                    <td>xx</td>
+                    <td>xx</td>
+                </tr>
+            </table>
 
-      </nav>
-    </header>
-
-    <div>
-      <h2>Qualifications</h2>
-    </div>
-    <div>
-      <a href="pages/home.html">Home</a> | <a href="qualifications.html">Qualifications</a> | <a
-        href="interest.html">Interests</a>| <a href="demo.html">Demos</a>
-    </div>
-    <img src="star.bmp">
-    <p>My name is xx. I was given this page and have corrected all the issues with the HTML and the image on this page
-      as part of my assessment.
-      p>This table contains qualifications I have studied, and ones I am currently studying</p>
-    <table>
-      <tr>
-        <th>Level</th>
-        <td>Subject</td>
-        <td>Completion date</td>
-        <td>Result</td>
-      </tr>
-      <tr>
-        <td>xx</td>
-        <td>xx
-        <td>
-        <td>xx</td>
-        <td>xx</td>
-      </tr>
-      <tr>
-        <td>xx</td>
-        <td>xx</td>
-        <td>xx</td>
-        <td>xx</td>
-      </tr>
-      <tr>
-        <td>xthis is a testx</td>
-        <td>xx</td>
-        <td>xx</td>
-        <td>xx</td>
-      </tr>
-    </table>
-    </p>
-    <p>I will have covered all of these subjects by the end of my first year at <strong>university</p></strong>
-    <ul>
-      <li>Programming languages
-      </li>
-      <ul>
-        <li>Python</li>
-        <li>JavaScript
-        <li>C#</li>
-      </ul>
-      <li>Networking</1i>
-      <li>Cybersecurity</li>
-      <li>Digital technologies</li>
-      <li>Web pages</li>
-      <li>Operating systems</li>
-      </ol>
-      <foot>My name is xx and I am studying a degree in xx at Staffordshire University</foot>
-  </body>
-  </head>
-
+            <p>
+                I will have covered all of these subjects by the end of my first
+                year at <strong>university</strong>
+            </p>
+            <ul>
+                <li>Programming languages</li>
+                <li>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                    </ul>
+                </li>
+                <li>Networking</li>
+                <li>Cybersecurity</li>
+                <li>Digital technologies</li>
+                <li>Web pages</li>
+                <li>Operating systems</li>
+            </ul>
+        </main>
+        <footer>
+            <p>
+                My name is Sorin Mihalache and I am studying a degree in xx at
+                Staffordshire University
+            </p>
+        </footer>
+    </body>
 </html>
