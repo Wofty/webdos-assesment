@@ -1,5 +1,5 @@
 // You can change the number on the end of the site to refresh the cache
-const CACHE_NAME = 'my-site-v2';
+const CACHE_NAME = 'my-site-v14';
 
 // add all your files in the CACHE_URLS
 const CACHE_URLS = ['/',
