@@ -59,12 +59,13 @@ header
     background-image: linear-gradient(45deg, #42b2ce 0%, #df0b6e65 100%);
     padding: 1rem 0;
     color: #effffe;
+    position: relative;
 }
 
 .cssdemo-header__h1 {
     font-size: 3em;
     margin: 2rem 0;
-    animation: typing 1.5s steps(6, end) forwards;
+    animation: typing 0.5s steps(6, end) forwards;
 }
 @keyframes typing {
     from {
@@ -74,17 +75,17 @@ header
         width: 100%;
     }
     50% {
-        color: #42b2ce;
+        color: #40b2ce;
         left: 200px;
         top: 200px;
     }
     75% {
-        color: rgb(224, 145, 220);
+        color: #e091dc;
         left: 0px;
         top: 200px;
     }
     100% {
-        color: rgb(255, 255, 255);
+        color: #ffffff;
         left: 0px;
         top: 0px;
     }

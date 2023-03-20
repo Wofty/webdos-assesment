@@ -11,8 +11,71 @@ const CACHE_URLS = ['/',
   'qualifications.html',
   'interest.html',
   'styles.css',
-  'manifest.json',
-  '404.html'
+  'icons/manifest.json',
+  '404.html',
+  //incons folder
+  "icons/browserconfig.xml",
+  'icons/android-chrome-192x192.png',
+  'icons/android-chrome-512x512.png',
+  'icons/apple-touch-icon.png',
+  'icons/favicon-16x16.png',
+  'icons/favicon-32x32.png',
+  'icons/favicon.ico',
+  'icons/mstile-70x70.png',
+  'icons/mstile-144x144.png',
+  'icons/mstile-150x150.png',
+  'icons/mstile-310x150.png',
+  'icons/mstile-310x310.png',
+
+  //images folder
+
+  "images/icons8-github.svg",
+  "images/icons8-linkedin.svg",
+  "images/icons8-twitter.svg",
+
+  "images/star-600x121.jpg",
+  "images/star-300.webp",
+  "images/star-600.webp",
+  "images/star-1200.webp",
+
+
+
+
+
+
+  //images/avatar subfolder
+  'images/avatar/300-avatar.webp',
+  'images/avatar/500-avatar.webp',
+  'images/avatar/700-avatar.webp',
+
+
+  //images/background subfolder
+  'images/background/binary.svg',
+
+
+  //images/cssdemo_img subfolder
+  'images/cssdemo_img/300xhtml.jpg',
+  'images/cssdemo_img/300xhtml.webp',
+  'images/cssdemo_img/600xhtml.webp',
+  'images/cssdemo_img/832xhtml.webp',
+  'images/cssdemo_img/html-css.png',
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  'images/logo/sm_logo.svg',
+
+
   // add all your images in here, in the correct folders. No need to add this file
 ];
 //DO NOT change any of the code below

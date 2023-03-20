@@ -10,11 +10,12 @@ general styles
 
 */
 
-:root {
+/* :root {
     --primary-color: #5c7aff;
     --secondary-color: #00bfff;
     --background-color: #f1f0fb;
     --text-color: #333;
+    --header-nav-color: #fff;
 }
 
 .dark-mode {
@@ -22,6 +23,51 @@ general styles
     --secondary-color: #008080;
     --background-color: #333;
     --text-color: #f5f5f5;
+} */
+
+/* Light theme */
+:root {
+    /* Colors */
+    --background-color: #f1f0fb;
+    --primary-color: #1f382c;
+    --secondary-color: #0077b5;
+    --tertiary-color: #febb2f;
+    --light-color: #f5f5f5;
+    --dark-color: #333;
+
+    /* Fonts */
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+.dark-mode {
+    /* Colors */
+    --background-color: #333;
+    --primary-color: #03f882;
+    --secondary-color: #9ca2ab;
+    --tertiary-color: #febb2f;
+    --light-color: #ffffff;
+    --dark-color: #f5f5f5;
+
+    /* Fonts */
+    --heading-font: 'Montserrat', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* Example usage */
+body {
+    font-family: var(--body-font);
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
 }
 
 button {
@@ -32,7 +78,7 @@ button {
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--body-font);
     font-size: 16px;
     box-sizing: border-box;
     max-width: 80%;
@@ -66,12 +112,10 @@ header
 header {
     padding: 0.3 rem;
     text-align: center;
-    background-color: rgb(241, 241, 241);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
+}
+nav {
+    max-width: 70%;
+    margin: 0 auto;
 }
 .logo {
     font-size: 1.5rem;
@@ -95,6 +139,7 @@ header {
 }
 
 .navbar a {
+    color: var(--header-nav-color);
     display: inline-block;
     padding: 0 0.4rem;
     text-decoration: none;
@@ -160,13 +205,12 @@ footer
 */
 
 .footer {
-    background-color: rgb(185, 185, 185);
     padding: 1rem;
 }
 
 .footer__text {
     font-size: 0.875rem;
-    color: #666;
+    color: var(--text-color);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -174,7 +218,7 @@ footer
 .footer__button {
     background-color: transparent;
     border: none;
-    color: #007bff;
+    color: var(--secondary-color);
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
@@ -185,7 +229,7 @@ footer
 }
 
 .footer__button:hover {
-    color: #0056b3;
+    color: var(--primary-color);
 }
 
 #dark-mode-button {
@@ -286,20 +330,29 @@ home- section one -----HERO
 #home-hero p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+#home-hero button {
+    background-color: var(--primary-color);
+
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    padding: 1rem 2rem;
+    border: none;
+    margin-bottom: 1rem;
 }
 
 #home-hero a {
     display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #007bff;
-    color: #fff;
+    color: var(--light-color);
     text-decoration: none;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease;
 }
 
-#home-hero a:hover {
-    background-color: #0056b3;
+#home-hero button:hover {
+    color: var(--light-color);
+    background-color: var(--secondary-color);
 }
 @media screen and (min-width: 768px) {
     #home-hero p {
@@ -329,14 +382,26 @@ home- section two -----home-services
 
 */
 .home-services {
+    padding: 2rem 0 0 0;
     margin: 2.5rem 0;
+    background: linear-gradient(
+        90deg,
+        rgba(34, 109, 55, 0.884) 0%,
+        rgba(148, 204, 233, 1) 100%
+    );
+    background: radial-gradient(
+        circle,
+        rgba(34, 109, 55, 0.884) 0%,
+        rgba(148, 204, 233, 1) 100%
+    );
 }
 
 .home-services__heading {
     font-size: 2.25rem;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 1.25rem;
+    margin-bottom: 4.25rem;
+    color: var(--light-color);
 }
 
 .home-services__grid {
@@ -344,10 +409,11 @@ home- section two -----home-services
 }
 
 .home-services__item {
-    background-color: #fff;
+    background-color: var(--light-color);
+    color: var(--text-color);
     padding: 1rem;
     margin-bottom: 1.875rem;
-    border: 0.0625rem solid #ccc;
+    border: 0.0625rem solid var(--primary-color);
     border-radius: 0.3125rem;
 }
 
@@ -362,6 +428,9 @@ home- section two -----home-services
     line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
+    .home-services {
+        padding: 2rem;
+    }
     .home-services__grid {
         display: grid;
         grid-gap: 1rem;
@@ -418,8 +487,8 @@ home section three -----SkILLS
 }
 
 .home-skills__item {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--light-color);
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     flex-basis: 100%;
     margin: 0.5rem;
@@ -435,8 +504,8 @@ home section three -----SkILLS
 
 .home-skills__link {
     display: inline-block;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     padding: 0.5rem 2rem;
     text-decoration: none;
     border-radius: 4px;
@@ -448,7 +517,7 @@ home section three -----SkILLS
 }
 
 .home-skills__link:hover {
-    background-color: #555;
+    background-color: var(--secondary-color);
 }
 
 @media (min-width: 768px) {
@@ -526,7 +595,7 @@ home section five -----CONTACT
 .contact {
     padding: 2rem;
     margin-bottom: 2rem;
-    background-color: #f5f5f5;
+    background-color: var(--light-color);
 }
 
 .contact__title {
@@ -562,7 +631,7 @@ home section five -----CONTACT
 .contact__form-textarea {
     padding: 0.5rem;
     border-radius: 0.25rem;
-    border: 1px solid #ccc;
+    border: 1px solid #ced4da;
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -572,8 +641,8 @@ home section five -----CONTACT
 }
 
 .contact__form-button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     border: none;
     padding: 0.5rem;
     border-radius: 0.25rem;
@@ -584,7 +653,7 @@ home section five -----CONTACT
 }
 
 .contact__form-button:hover {
-    background-color: #0056b3;
+    background-color: var(--secondary-color);
 }
 
 @media (min-width: 768px) {
@@ -777,7 +846,7 @@ Interest page - section one ----- HERO
 
 .interest-facts__title {
     font-size: 1.8rem;
-    color: #333;
+    color: var(--primary-color);
     margin-bottom: 1.5rem;
 }
 
@@ -789,18 +858,18 @@ Interest page - section one ----- HERO
 
 .interest-facts__list li {
     font-size: 1.2rem;
-    color: #303030;
+    color: var(--text-color);
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 .interest-facts__list :nth-child(2n + 1) {
-    background-color: rgb(41, 41, 41);
+    background-color: var(--background-color);
     padding: 0.4rem;
     border-radius: 5px;
-    color: #fff;
+    color: var(--text-color);
 }
 .interest-facts__list :nth-child(2n + 1) li::before {
-    color: #000000;
+    color: var(--background-color);
     margin-right: 0.5rem;
 }
 
@@ -808,103 +877,6 @@ Interest page - section one ----- HERO
     end of interest page - section two ----- FACTS
 
 */
-
-/*
-
-    Interest page - section three ----- JAPAN
-
-*/
-
-.interest-japan {
-    margin: 4rem auto;
-    max-width: 1600px;
-    padding: 2rem;
-
-    border-radius: 5px;
-}
-
-.interest-japan__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.interest-japan__title {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-.interest-japan p {
-    font-size: 1.2rem;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-    max-width: 80%;
-    text-align: left;
-}
-
-.interest-japan__images {
-    display: grid;
-
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-}
-
-.interest-japan__image {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-}
-@media screen and (min-width: 768px) {
-    .interest-japan__images {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-
-    .interest-japan__image:nth-child(1) {
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .interest-japan__image:nth-child(2) {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    .interest-japan__image:nth-child(3) {
-        grid-column: 3/5;
-        grid-row: 1/2;
-    }
-    .interest-japan__image:nth-child(4) {
-        grid-column: 1/3;
-        grid-row: 2/3;
-    }
-    .interest-japan__image:nth-child(5) {
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
-    .interest-japan__image:nth-child(6) {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    .interest-japan__image:nth-child(7) {
-        grid-column: 1/3;
-        grid-row: 3/5;
-    }
-    .interest-japan__image:nth-child(8) {
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
-
-    .interest-japan__image:nth-child(9) {
-        grid-column: 4/5;
-        grid-row: 3/4;
-    }
-
-    .interest-japan__image:nth-child(10) {
-        grid-column: 3/5;
-        grid-row: 4/5;
-    }
-}
 
 /*
 
@@ -952,7 +924,7 @@ qualifications page
 
 .qualifications-hero__subtitle {
     font-size: 1.2rem;
-    color: #666;
+    color: #333;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -990,30 +962,33 @@ qualifications page
 
 .qualification-skills {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.qualification-skills div {
+.qualification-skills__lists {
     text-align: center;
     margin: 0 2rem;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qualification-skills__lists div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.qualification-skills h2 h3 {
+.qualification-skills h2 {
     font-size: 1.2rem;
     color: #666;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-.qualification-skills__list {
-    list-style-type: disc;
-    padding-left: 1rem;
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .qualifications-footer {
-    background-color: #f0f0f0;
-    box-shadow: #555 0 2px 8px;
     padding: 1rem;
     text-align: center;
 }
@@ -1025,7 +1000,7 @@ qualifications page
 }
 .qualifications-footer em {
     font-size: 1.2rem;
-    color: #00ff55;
+    color: var(--primary-color);
     line-height: 1.6;
     margin-bottom: 1rem;
 }
