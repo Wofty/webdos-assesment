@@ -2,7 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="icons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="icons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="icons/manifest.json" />
+        <link rel="shortcut icon" href="icons/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-config" content="icons/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
         <meta charset="UTF-8" />
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Sorin Mihalache - Web Developer" />
@@ -15,6 +38,7 @@
             <nav>
                 <a href="index.html">
                     <img
+                        class="logo"
                         src="images/logo/sm_logo.svg"
                         alt="Website logo"
                         width="100"
@@ -31,14 +55,9 @@
         </header>
         <main>
             <section class="demos-hero">
-                <img
-                    class="demos-hero__image"
-                    src="http://placehold.jp/1000x1000.png"
-                    alt="Sample Image"
-                />
                 <div class="demos-hero__content">
-                    <h1 class="demos-hero__title">Welcome to my demo page!</h1>
-                    <p class="demos-hero__text">
+                    <h1>My Demos</h1>
+                    <p>
                         Here, you can get a glimpse of some of the web
                         development projects I've worked on.
                     </p>
@@ -47,6 +66,86 @@
                         experience skills.
                     </p>
                 </div>
+            </section>
+
+            <section class="demos-sections">
+                <picture class="demos-sections__picture">
+                    <source
+                        type="image/webp"
+                        srcset="images/demos/1080_css.webp"
+                        media="(min-width: 70rem)"
+                    />
+                    <source
+                        type="image/webp"
+                        srcset="images/demos/550_css.webp"
+                        media="(min-width: 60rem)"
+                    />
+                    <source
+                        type="image/webp"
+                        srcset="images/demos/550_css.webp"
+                        media="(min-width: 20rem)"
+                    />
+
+                    <img
+                        class="demos-img"
+                        src="images/demos/550_js.css"
+                        alt=" screenshot of the css demo "
+                        width="1080"
+                        height="1080"
+                    />
+                </picture>
+
+                <div class="demos-sections__content">
+                    <h2 class="demos-sections__title">CSS</h2>
+                    <p class="demos-sections__text">
+                        This demo showcases my CSS-based design skills as part
+                        of his Web Development and Operating Systems course.
+                    </p>
+                    <p>
+                        CSS and HTML form the core of web development, with HTML
+                        providing the structure and CSS determining the visual
+                        layout.
+                    </p>
+                    <p>
+                        The page demonstrates the versatility of modern CSS with
+                        techniques such as Flexbox, Grid, and Custom Variables.
+                    </p>
+
+                    <a href="cssdemo.html" class="btn btn--secondary"
+                        >View Demo</a
+                    >
+                </div>
+            </section>
+            <section class="demos-sections demos-sections__reverse">
+                <div class="demos-sections__content">
+                    <h2 class="demos-sections__title">JavaScript</h2>
+                    <p class="demos-sections__text">Comming soon ....</p>
+
+                    <a href="holding.html" class="btn btn--primary"
+                        >View Demo</a
+                    >
+                </div>
+                <!-- image created with Canva -->
+                <picture class="demos-sections__picture">
+                    <source
+                        type="image/webp"
+                        srcset="images/demos/1080_js.webp"
+                        media="(min-width: 70rem)"
+                    />
+                    <source
+                        type="image/webp"
+                        srcset="images/demos/550_js.webp"
+                        media="(min-width: 60rem)"
+                    />
+                    <source
+                        type="image/webp"
+                        srcset="images/demos/300_js.webp"
+                        media="(min-width: 20rem)"
+                    />
+
+                    <img class="demos-img" src="images/demos/550_js.jpg" alt="
+                    coming soon picture width="550" height="550" />
+                </picture>
             </section>
         </main>
 

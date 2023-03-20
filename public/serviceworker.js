@@ -1,5 +1,5 @@
 // You can change the number on the end of the site to refresh the cache
-const CACHE_NAME = 'my-site-v1';
+const CACHE_NAME = 'my-site-v2';
 
 // add all your files in the CACHE_URLS
 const CACHE_URLS = ['/',
@@ -60,19 +60,28 @@ const CACHE_URLS = ['/',
   'images/cssdemo_img/832xhtml.webp',
   'images/cssdemo_img/html-css.png',
 
+  //demos subfolder
+  "images/demos/300_js.webp",
+  "images/demos/550_js.webp",
+  "images/demos/1080_js.webp",
+  "images/demos/1080_js.jpg",
+  "images/demos/300_css.webp",
+  "images/demos/550_css.webp",
+  "images/demos/1080_css.webp",
+  "images/demos/1080_css.jpg",
+
+
+  //images/interest subfolder
+
+  "images/interest/bookshelf.svg",
+  "images/interest/camerawithflash.svg",
+  "images/interest/man-cook.svg",
+  "images/interest/moneybag.svg",
+  "images/interest/xbox-controller-48-regular.svg",
 
 
 
-
-
-
-
-
-
-
-
-
-
+  //logo folder
   'images/logo/sm_logo.svg',
 
 

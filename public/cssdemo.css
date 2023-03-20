@@ -16,6 +16,7 @@ main {
     margin: 0 auto;
     max-width: 66rem;
     padding: 1rem;
+    /* Image created in canva by myself  */
     background-image: url('images/background/binary.svg');
     background-size: auto;
     background-position: center;
@@ -33,6 +34,7 @@ main {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 700;
+
     display: inline-block;
     transform-origin: center bottom;
     transition: transform 0.5s;
@@ -324,10 +326,6 @@ end of navigation
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
-}
-
-.cssdemo-article-four__link:hover {
-    text-decoration: underline;
 }
 
 .cssdemo-article-four__list {

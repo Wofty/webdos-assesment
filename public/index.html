@@ -31,6 +31,7 @@
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="msapplication-config" content="icons/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
+        <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Sorin Mihalache - Web Developer" />
@@ -64,8 +65,9 @@
 
     section one - hero 
     
-    
+                
     -->
+            <!-- avatar made with AI -->
             <section id="home-hero">
                 <img
                     src="images/avatar/300-avatar.webp"
@@ -75,7 +77,8 @@
                         images/avatar/500-avatar.webp 2x,
                         images/avatar/700-avatar.webp 3x
                     "
-                    sizes="(min-width: 768px) 400px, 100vw"
+                    width="300"
+                    height="300"
                 />
                 <h1>Welcome to my online portfolio!</h1>
                 <p class="">
@@ -83,9 +86,8 @@
                     back-end technologies. I write clean, efficient code to
                     create exceptional digital experiences for all users.
                 </p>
-                <button>
-                    <a href="demos.html">Explore My Work</a>
-                </button>
+
+                <a href="demos.html" class="btn">Explore My Work</a>
             </section>
             <!-- 
 
@@ -171,11 +173,13 @@
                 -->
 
             <section class="home-skills">
-                <h2 class="home-skills__heading">My Skills & Expertise</h2>
-                <p class="home-skills__description">
-                    I have extensive experience working with the following
-                    technologies:
-                </p>
+                <div class="home-skills__content">
+                    <h2 class="home-skills__heading">My Skills & Expertise</h2>
+                    <p class="home-skills__description">
+                        I have extensive experience working with the following
+                        technologies:
+                    </p>
+                </div>
                 <ul class="home-skills__list">
                     <li class="home-skills__item">
                         <span>Web Design:</span> <br />Adobe Photoshop, Adobe
@@ -207,7 +211,7 @@
                     </li>
                 </ul>
                 <div>
-                    <a href="demos.html" class="home-skills__link"
+                    <a href="qualifications.html" class="home-skills__link"
                         >View My Skills & Expertise</a
                     >
                 </div>

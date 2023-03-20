@@ -10,21 +10,6 @@ general styles
 
 */
 
-/* :root {
-    --primary-color: #5c7aff;
-    --secondary-color: #00bfff;
-    --background-color: #f1f0fb;
-    --text-color: #333;
-    --header-nav-color: #fff;
-}
-
-.dark-mode {
-    --primary-color: #00bfff;
-    --secondary-color: #008080;
-    --background-color: #333;
-    --text-color: #f5f5f5;
-} */
-
 /* Light theme */
 :root {
     /* Colors */
@@ -36,11 +21,12 @@ general styles
     --dark-color: #333;
 
     /* Fonts */
-    --heading-font: 'Montserrat', sans-serif;
-    --body-font: 'Roboto', sans-serif;
+
+    --heading-font: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+    --body-font: 'Roboto', 'Arial', 'Helvetica', sans-serif;
 }
-.dark-mode {
-    /* Colors */
+/* .dark-mode {
+    
     --background-color: #333;
     --primary-color: #03f882;
     --secondary-color: #9ca2ab;
@@ -48,10 +34,11 @@ general styles
     --light-color: #ffffff;
     --dark-color: #f5f5f5;
 
-    /* Fonts */
-    --heading-font: 'Montserrat', sans-serif;
-    --body-font: 'Roboto', sans-serif;
-}
+    
+
+    --heading-font: 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+    --body-font: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+} */
 
 /* Example usage */
 body {
@@ -96,11 +83,25 @@ main {
     margin-top: 5rem;
 }
 
+.btn {
+    box-shadow: 0px 1px 0px 0px #f0f7fa;
+    transition: background-color 0.3s ease;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--light-color);
+    font-size: 19px;
+    padding: 12px 24px;
+    text-decoration: none;
+    text-shadow: 0px -1px 0px #5b6178;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
 /*
-
-
-
-
 
 
 header 
@@ -114,17 +115,9 @@ header {
     text-align: center;
 }
 nav {
-    max-width: 70%;
     margin: 0 auto;
 }
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-.logo a {
-    text-decoration: none;
-}
+
 /* navigation style */
 
 .navbar {
@@ -139,6 +132,7 @@ nav {
 }
 
 .navbar a {
+    font-weight: 600;
     color: var(--header-nav-color);
     display: inline-block;
     padding: 0 0.4rem;
@@ -180,12 +174,7 @@ nav {
 }
 /* 
 
-
-
-
 end of header 
-
-
 
 
 */
@@ -215,29 +204,6 @@ footer
     text-align: center;
 }
 
-.footer__button {
-    background-color: transparent;
-    border: none;
-    color: var(--secondary-color);
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    display: block;
-    margin: 0 auto;
-}
-
-.footer__button:hover {
-    color: var(--primary-color);
-}
-
-#dark-mode-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
 .footer__icons {
     display: flex;
     justify-content: center;
@@ -258,14 +224,13 @@ footer
 @media screen and (min-width: 768px) {
     .footer {
         display: flex;
-
         justify-content: space-between;
         align-items: center;
     }
     .footer__container {
-        width: 90%;
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -281,21 +246,14 @@ footer
 }
 /* 
 
-
-
 end of footer 
-
-
 
 
 */
 
 /*
 
-
-
 Home Page 
-
 
 
 
@@ -333,27 +291,6 @@ home- section one -----HERO
     color: var(--primary-color);
 }
 
-#home-hero button {
-    background-color: var(--primary-color);
-
-    text-decoration: none;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease;
-    padding: 1rem 2rem;
-    border: none;
-    margin-bottom: 1rem;
-}
-
-#home-hero a {
-    display: inline-block;
-    color: var(--light-color);
-    text-decoration: none;
-}
-
-#home-hero button:hover {
-    color: var(--light-color);
-    background-color: var(--secondary-color);
-}
 @media screen and (min-width: 768px) {
     #home-hero p {
         max-width: 70%;
@@ -382,17 +319,12 @@ home- section two -----home-services
 
 */
 .home-services {
-    padding: 2rem 0 0 0;
-    margin: 2.5rem 0;
+    padding: 2rem 0 0;
+
     background: linear-gradient(
-        90deg,
-        rgba(34, 109, 55, 0.884) 0%,
-        rgba(148, 204, 233, 1) 100%
-    );
-    background: radial-gradient(
-        circle,
-        rgba(34, 109, 55, 0.884) 0%,
-        rgba(148, 204, 233, 1) 100%
+        to left,
+        rgba(248, 248, 248, 0.5) 0%,
+        rgba(99, 255, 182, 0.5) 100%
     );
 }
 
@@ -401,11 +333,11 @@ home- section two -----home-services
     font-weight: bold;
     text-align: center;
     margin-bottom: 4.25rem;
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 
 .home-services__grid {
-    padding: 0 2rem;
+    padding: 0 2rem 2rem;
 }
 
 .home-services__item {
@@ -465,12 +397,21 @@ home section three -----SkILLS
 .home-skills {
     max-width: 1500px;
     margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-skills__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
 .home-skills__heading {
     font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1rem;
 }
 
 .home-skills__description {
@@ -521,6 +462,11 @@ home section three -----SkILLS
 }
 
 @media (min-width: 768px) {
+    .home-skills__content {
+        max-width: 70%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
     .home-skills__item {
         flex-basis: calc(50% - 1rem);
     }
@@ -543,44 +489,7 @@ end of home section three -----SkILLS
 
 
 
-home section four -----CUSTOMERS
 
-
-
-
-
-*/
-
-.customer {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.customer__title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.customer__logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.customer__logo {
-    margin: 1rem;
-    width: 100%;
-    max-width: 20rem;
-}
-
-@media screen and (min-width: 768px) {
-    .customer__logos {
-        justify-content: space-between;
-    }
-}
-
-/* 
 
 
 */
@@ -595,7 +504,11 @@ home section five -----CONTACT
 .contact {
     padding: 2rem;
     margin-bottom: 2rem;
-    background-color: var(--light-color);
+    background: linear-gradient(
+        to right,
+        rgba(248, 248, 248, 0.5) 0%,
+        rgba(99, 255, 182, 0.5) 100%
+    );
 }
 
 .contact__title {
@@ -722,63 +635,117 @@ end of home section five -----CONTACT
 
 */
 
-/*
-
-
-Demos page - section one ----- HERO
-
+/* 
+    demos page hero
 */
-
-/* General styles */
-
 .demos-hero {
+    background: linear-gradient(
+        to right,
+        rgba(248, 248, 248, 0.5) 0%,
+        rgba(99, 255, 182, 0.5) 100%
+    );
+    padding: 5rem 0;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
 }
-
-.demos-hero__image {
-    width: 90%;
-    height: auto;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
 .demos-hero__content {
     max-width: 600px;
-    margin: 2rem;
-}
-
-.demos-hero__title {
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-.demos-hero__text {
+/*
+
+
+Demos page sections
+
+*/
+
+.demos-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+}
+.demos-sections__reverse {
+    flex-direction: column-reverse;
+}
+
+.demos-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.demos-sections__picture {
+    display: block;
+    margin: 3rem;
+    width: 80%;
+}
+
+.demos-sections__content {
+    max-width: 600px;
+    margin: 0 2rem;
+    align-items: center;
+}
+
+.demos-sections__title {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.demos-sections__text {
     font-size: 16px;
     margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-    .demos-hero {
+    .demos-sections {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    .demos-hero__image {
+    .demos-sections__image {
         width: 40%;
-        margin: 4rem 0 4rem 4rem;
+        margin: 4rem;
     }
 
-    .demos-hero__content {
+    .demos-sections__content {
         width: 50%;
         margin: 4rem;
     }
+    .demos-sections__picture {
+        width: 60%;
+    }
 }
+@media screen and (min-width: 1024px) {
+    .demos-sections {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .demos-sections__image {
+        width: 40%;
+        margin: 4rem;
+    }
+
+    .demos-sections__content {
+        width: 50%;
+        margin: 4rem;
+    }
+    .demos-sections__picture {
+        width: 40%;
+    }
+}
+
+/* 
+    Demos page - section  ----- JS DEMOS
+*/
 
 /* 
 
@@ -793,55 +760,22 @@ Interest page - section one ----- HERO
 
 */
 
-.interest-hero {
-    display: flex;
-    max-width: 1600px;
-    align-items: center;
-
-    padding: 2rem;
-    margin: 0 auto;
-
-    border-radius: 20px;
-}
-
-.interest-hero__content {
-    flex-grow: 1;
-    margin: auto;
-}
-.interest-hero__title {
-    text-align: center;
-}
-
-.interest-hero__text {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-@media screen and (min-width: 768px) {
-    .interest-hero {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .interest-hero__content {
-        width: 50%;
-        margin: 4rem auto;
-    }
-    .interest-hero__text {
-        text-align: center;
-    }
-}
-
 /* 
     
         Interest page - section two ----- FACTS
     
 */
+
 .interest-facts {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1200px;
     padding: 2rem;
     border-radius: 5px;
+    background: linear-gradient(
+        to left,
+        rgba(248, 248, 248, 0.5) 0%,
+        rgba(99, 255, 182, 0.5) 100%
+    );
 }
 
 .interest-facts__title {
@@ -863,33 +797,71 @@ Interest page - section one ----- HERO
     margin-bottom: 1rem;
 }
 .interest-facts__list :nth-child(2n + 1) {
-    background-color: var(--background-color);
+    background-color: #80c2a2;
     padding: 0.4rem;
     border-radius: 5px;
-    color: var(--text-color);
+    color: rgb(8, 0, 17);
 }
 .interest-facts__list :nth-child(2n + 1) li::before {
-    color: var(--background-color);
+    color: var(--light-color);
+
     margin-right: 0.5rem;
 }
 
-/* 
-    end of interest page - section two ----- FACTS
+.hobbies-passions {
+    background-color: var(--light-color);
+    padding: 60px 0;
+}
 
-*/
+.hobbies-passions__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-/*
+.hobbies-passions__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
 
-    Interest page - section three ----- GAMES
+.hobbies-passions__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+@media screen and (min-width: 480px) {
+    .hobbies-passions__item:nth-child(5) {
+        grid-column: 1 / span 2;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hobbies-passions__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+.hobbies-passions__item {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-*/
+.hobbies-passions__item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
 
-/* 
+.hobbies-passions__item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
 
-qualifications page 
-
-
-*/
+.hobbies-passions__item p {
+    font-size: 18px;
+    line-height: 1.5;
+}
 
 .qualifications-main {
     margin-top: 7rem;
@@ -903,7 +875,7 @@ qualifications page
 
 .qualifications-hero {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 3rem 2rem;
 }
 
 .qualifications-hero__header {
@@ -920,6 +892,11 @@ qualifications page
     margin: 0 auto;
     max-width: 300px;
     width: 100%;
+}
+.qualifications-hero__image {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
 }
 
 .qualifications-hero__subtitle {

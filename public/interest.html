@@ -3,6 +3,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="icons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="icons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="icons/manifest.json" />
+        <link rel="shortcut icon" href="icons/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-config" content="icons/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,6 +37,7 @@
         <header>
             <nav>
                 <a href="index.html">
+                    <!-- Logo created with Canva -->
                     <img
                         src="images/logo/sm_logo.svg"
                         alt="Site logo"
@@ -33,79 +56,149 @@
         <main>
             <!-- 
 
-          hero section
-
-     -->
-
-            <section class="interest-hero">
-                <div class="interest-hero__content">
-                    <h1 class="interest-hero__title">Interests</h1>
-                    <p class="interest-hero__text">
-                        My name is Sorin, and I'm a web developer passionate
-                        about Youtube and video editing.
-                    </p>
+    section one - hero 
+    
+    
+    -->
+            <section class="demos-hero">
+                <div class="demos-hero__content">
+                    <h1>My Interests</h1>
+                    <h2>Here is more information about me and my interests.</h2>
                 </div>
             </section>
+            <!-- Icons from https://icon-sets.iconify.design/icon-park/bookshelf/ -->
+            <section class="hobbies-passions" id="hobbies">
+                <div class="hobbies-passions__container">
+                    <h2 class="hobbies-passions__title">
+                        My Hobbies and Passions
+                    </h2>
+                    <div class="hobbies-passions__grid">
+                        <div class="hobbies-passions__item">
+                            <img
+                                src="images/interest/camerawithflash.svg"
+                                alt="Photography"
+                                width="100"
+                                height="100"
+                            />
+                            <h3>Photography</h3>
+                            <p>
+                                I love capturing beautiful moments and
+                                landscapes with my camera.
+                            </p>
+                        </div>
+                        <div class="hobbies-passions__item">
+                            <img
+                                src="images/interest/man-cook.svg"
+                                alt="Cooking"
+                                width="100"
+                                height="100"
+                            />
+                            <h3>Cooking</h3>
+                            <p>
+                                I enjoy experimenting with new recipes and
+                                creating delicious meals for my family and
+                                friends.
+                            </p>
+                        </div>
+                        <div class="hobbies-passions__item">
+                            <img
+                                src="images/interest/xbox-controller-48-regular.svg"
+                                alt="Hiking"
+                                width="100"
+                                height="100"
+                            />
+                            <h3>Video Gamming</h3>
+                            <p>
+                                I love playing video games and have been a gamer
+                                since I was a kid.
+                            </p>
+                        </div>
+                        <div class="hobbies-passions__item">
+                            <img
+                                src="images/interest/bookshelf.svg"
+                                alt="Reading"
+                                width="100"
+                                height="100"
+                            />
+                            <h3>Reading</h3>
+                            <p>
+                                I'm an avid reader and love getting lost in a
+                                good book.
+                            </p>
+                        </div>
+                        <div class="hobbies-passions__item">
+                            <img
+                                src="images/interest/moneybag.svg"
+                                alt="Volunteering"
+                                width="100"
+                                height="100"
+                            />
+                            <h3>Making Money</h3>
+                            <p>I make money from side hustles and investing.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+                section two - interest facts
+            -->
+
+            <section class="interest-facts" id="facts">
+                <h2 class="interest-facts__title">Facts about my passions</h2>
+                <ol class="interest-facts__list">
+                    <li>
+                        I am a parent of three children, meaning I am a seasoned
+                        pro in parenting. I am a master at diffusing tantrums.
+                        I&apos;ve got a seemingly endless supply of patience
+                        when juggling life with three not-so-little humans. In
+                        short, I am a certified expert at the most challenging
+                        and hilarious job on the planet.
+                    </li>
+                    <li>
+                        Six years ago, I made a bold move and left my birth
+                        country, Romania. I packed my bags, bid farewell to
+                        loved ones, and embarked on a thrilling adventure full
+                        of new experiences, challenges, and endless cups of
+                        Tetley&apos;s with Milk that remained undrunk.
+                    </li>
+                    <li>
+                        I started travelling the world when I was 17: Italy,
+                        France, Monaco, and Spain. So it&apos;s safe to say I am
+                        a true citizen of the world, and I am pretty sure the
+                        next adventure is right around the corner.
+                    </li>
+                    <li>
+                        I have a wide range of interests that span the worlds of
+                        history, economics, and technology. My curiosity knows
+                        no bounds, and I&apos;m always eager to learn something
+                        new. My family tells me I&apos;m a walking
+                        encyclopaedia, and they always need me while doing their
+                        history homework.
+                    </li>
+                    <li>
+                        When I am not busy slaying dragons in Dota 2 or
+                        conquering the world in Counterstrike, I&apos;m most
+                        likely hiding in my den and creating awesome YouTube
+                        content for my subscribers.
+                    </li>
+                    <li>
+                        When taking on complex projects, I am the ultimate Boss.
+                        I&apos;m a master at coordinating all the moving pieces
+                        of a project, and I like finding creative solutions,
+                        even to the toughest problems. So, rest assured; I
+                        always have fun spending 10 hours debugging something
+                        I&apos;ve created.
+                    </li>
+                    <li>
+                        If you have a project in mind, I can make it happen! So,
+                        bring on the next challenge; I am ready to rock!
+                    </li>
+                </ol>
+            </section>
         </main>
-        <!--  Japan section-->
-
-        <section class="interest-facts">
-            <h2 class="interest-facts__title">
-                Lets talk a bit about me and my interests
-            </h2>
-            <ol class="interest-facts__list">
-                <li>
-                    I am a parent of three children, meaning I am a seasoned pro
-                    in parenting. I am a master at diffusing tantrums. I&apos;ve
-                    got a seemingly endless supply of patience when juggling
-                    life with three not-so-little humans. In short, I am a
-                    certified expert at the most challenging and hilarious job
-                    on the planet.
-                </li>
-                <li>
-                    Six years ago, I made a bold move and left my birth country,
-                    Romania. I packed my bags, bid farewell to loved ones, and
-                    embarked on a thrilling adventure full of new experiences,
-                    challenges, and endless cups of Tetley&apos;s with Milk that
-                    remained undrunk.
-                </li>
-                <li>
-                    I started travelling the world when I was 17: Italy, France,
-                    Monaco, and Spain. So it&apos;s safe to say I am a true
-                    citizen of the world, and I am pretty sure the next
-                    adventure is right around the corner.
-                </li>
-                <li>
-                    I have a wide range of interests that span the worlds of
-                    history, economics, and technology. My curiosity knows no
-                    bounds, and I&apos;m always eager to learn something new. My
-                    family tells me I&apos;m a walking encyclopaedia, and they
-                    always need me while doing their history homework.
-                </li>
-                <li>
-                    When I am not busy slaying dragons in Dota 2 or conquering
-                    the world in Counterstrike, I&apos;m most likely hiding in
-                    my den and creating awesome YouTube content for my
-                    subscribers.
-                </li>
-                <li>
-                    When taking on complex projects, I am the ultimate Boss.
-                    I&apos;m a master at coordinating all the moving pieces of a
-                    project, and I like finding creative solutions, even to the
-                    toughest problems. So, rest assured; I always have fun
-                    spending 10 hours debugging something I&apos;ve created.
-                </li>
-                <li>
-                    If you have a project in mind, I can make it happen! So,
-                    bring on the next challenge; I am ready to rock!
-                </li>
-            </ol>
-        </section>
-
         <!--   
-          
-          
-          footer
+footer
         
         
         -->
