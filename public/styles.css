@@ -40,7 +40,7 @@ general styles
     --body-font: 'Roboto', 'Arial', 'Helvetica', sans-serif;
 } */
 
-/* Example usage */
+
 body {
     font-family: var(--body-font);
     color: var(--dark-color);
